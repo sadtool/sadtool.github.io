@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SAD Tool</title>
-
+		
+		<link rel="shortcut icon" href="assets/img/carLogo.ico" type="image/x-icon">
         
 
         <!-- Bootstrap -->
@@ -223,33 +224,36 @@
     <h2 class="subtitle">Напишите нам Ваши вопросы и предложения</h2>
 
 
-    <form role="form" class="contact-form" method="post">
-    <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s">
-    <div class="form-group">
-    <div class="controls">
-    <input type="text" class="form-control" placeholder="Имя" name="name">
-    </div>
-    </div>
-    <div class="form-group">
-    <div class="controls">
-    <input type="email" class="form-control email" placeholder="Email" name="email">
-    </div>
-    </div>
-    <div class="form-group">
-    <div class="controls">
-    <input type="text" class="form-control requiredField" placeholder="Тема" name="subject">
-    </div>
-    </div>
+    <form class="contact-form" id="formContact" action="https://formspree.io/info.sadtool@gmail.com" method="POST">
+		<div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s">
+			<div class="form-group">
+				<div class="controls">
+				<input type="text" name="name" class="form-control" placeholder="Имя" name="name">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="controls">
+					<input type="email" name="email" class="form-control email" placeholder="Email" name="email">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="controls">
+					<input type="text" name="header" class="form-control requiredField" placeholder="Тема" name="subject">
+				</div>
+			</div>
 
-    <div class="form-group">
+			<div class="form-group">
 
-    <div class="controls">
-    <textarea rows="7" class="form-control" placeholder="Сообщение" name="message"></textarea>
-    </div>
-    </div>
-    <button type="submit" id="submit" class="btn btn-lg btn-common">Отправить</button><div id="success" style="color:#34495e;"></div>
+				<div class="controls">
+					<textarea rows="7" name="message" class="form-control" placeholder="Сообщение" name="message"></textarea>
+				</div>
+			</div>
+			
+			<button type="submit" id="submit" class="btn btn-lg btn-common">Отправить</button><div id="success" style="color:#34495e;"></div>
 
-    </div>
+		</div>
     </form>
 
     <div class="col-md-6 wow fadeInRight">
@@ -261,7 +265,7 @@
 	</div>
 <div class="contact-info">
     <p><i class="fa fa-map-marker"></i> Волгоград, 4*****, Россия</p>
-     <p><i class="fa fa-envelope"></i> info@sadstudio.net</p>
+     <p><i class="fa fa-envelope"></i> info.sadstudio@gmail.com</p>
 </div>
 
    
